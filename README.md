@@ -92,9 +92,9 @@ const MyApp: React.FunctionComponent = () => {
 
 Now when a new wrapper or provider is needed, you only need to alter that array with how the component should be wrapped.
 
-[npm-image]: https://img.shields.io/npm/v/immutability-helper.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/immutability-helper
-[travis-image]: https://img.shields.io/travis/kolodny/immutability-helper.svg?style=flat-square
-[travis-url]: https://travis-ci.org/kolodny/immutability-helper
-[downloads-image]: http://img.shields.io/npm/dm/immutability-helper.svg?style=flat-square
-[downloads-url]: https://npmjs.org/package/immutability-helper
+[npm-image]: https://img.shields.io/npm/v/react-compose-wrappers.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/react-compose-wrappers
+[travis-image]: https://img.shields.io/travis/kolodny/react-compose-wrappers.svg?style=flat-square
+[travis-url]: https://travis-ci.org/kolodny/react-compose-wrappers
+[downloads-image]: http://img.shields.io/npm/dm/react-compose-wrappers.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/react-compose-wrappers

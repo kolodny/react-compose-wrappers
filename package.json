@@ -8,7 +8,7 @@
     "prepublishOnly": "npm run build",
     "test:ts": "cd example-ts && npm test -- --watchAll=false",
     "test:js": "cd example-js && npm test -- --watchAll=false",
-    "test": "npm run test:js && npm run test:ts"
+    "test": "npm run build && npm run test:js && npm run test:ts"
   },
   "keywords": [],
   "author": "Moshe Kolodny",
