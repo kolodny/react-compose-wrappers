@@ -5,4 +5,4 @@ node_js:
   - '12'
   - '14'
   - 'lts/*'
-install: (cd example-js && npm install) && (cd example-ts && npm install)
+install: npm install && (cd example-js && npm install) && (cd example-ts && npm install)
