@@ -1,0 +1,11 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import App from './App';
+
+test('TS', () => {
+  const { getByText } = render(<App />);
+  expect(getByText('P1: foo', {exact: false})).toBeInTheDocument();
+  expect(getByText('P2: bar', {exact: false})).toBeInTheDocument();
+  expect(getByText('P3: baz', {exact: false})).toBeInTheDocument();
+  expect(getByText('P4: qaz', {exact: false})).toBeInTheDocument();
+});

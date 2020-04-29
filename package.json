@@ -1,0 +1,30 @@
+{
+  "name": "react-compose-wrappers",
+  "version": "0.0.0",
+  "description": "Compose multiple React component wrappers",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test:ts": "cd example-ts && npm test -- --watchAll=false",
+    "test:js": "cd example-js && npm test -- --watchAll=false",
+    "test": "npm run test:js && npm run test:ts"
+  },
+  "keywords": [],
+  "author": "Moshe Kolodny",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "react": "^16.13.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/react-compose-wrappers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolodny/react-compose-wrappers/issues"
+  },
+  "homepage": "https://github.com/kolodny/react-compose-wrappers#readme"
+}
