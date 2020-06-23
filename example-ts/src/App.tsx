@@ -23,6 +23,15 @@ const App: React.FunctionComponent = () => {
   const MasterProvider = composeWrappers([
     props => <P1.Provider value={{p1: 'foo'}} children={props.children} />,
     props => <P2.Provider value={{p2: 'bar'}}>{props.children}</P2.Provider>,
+    props => {
+      const p1 = React.useContext(P1);
+      const p4 = React.useContext(P4);
+      return <>
+        P1 from wrapper: {p1.p1}
+        P4 from wrapper: {p4.p4}
+        {props.children}
+      </>
+    },
     props => <P3.Provider value={{p3: 'baz'}}>{props.children}</P3.Provider>,
     props => <P4.Provider value={{p4: 'qaz'}}>{props.children}</P4.Provider>,
   ]);
