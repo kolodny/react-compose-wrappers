@@ -1,9 +1,11 @@
 import React from 'react';
 
+type Wrapper = React.FC<React.PropsWithChildren<{}>>;
+
 export const composeWrappers = (
-  wrappers: React.FunctionComponent[]
-): React.FunctionComponent => {
-  return wrappers.reduceRight((Acc, Current): React.FunctionComponent => {
+  wrappers: Wrapper[]
+): Wrapper => {
+  return wrappers.reduceRight((Acc, Current): Wrapper => {
     return props => React.createElement(
       Current,
       null,
